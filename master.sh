@@ -197,7 +197,7 @@ if [[ $VER == "" ]]; then
   # 获取最新版本
   echo "获取最新版..."
   #latest_version=`curl -s 'http://auth.fikkey.com/master/upgrades?latest=1' | grep -Po 'v\d+\.\d+.\d+' || true`
-  latest_version=$(echo 'v5.1.3' | grep -Po 'v\d+\.\d+.\d+' || true)
+  latest_version=$(echo 'v5.1.11' | grep -Po 'v\d+\.\d+.\d+' || true)
   if [[ "$latest_version" == "" ]]; then
     echo "获取最新版失败，请先登录官网填入主控IP"
     exit 1
@@ -221,8 +221,8 @@ else
 fi
 
 cd /opt/
-# download "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "$tar_gz_name"
-download "http://auth.cdnfly.cn/cdnfly/elasticsearch-7.6.1-x86_64.rpm" "http://auth.cdnfly.cn/cdnfly/elasticsearch-7.6.1-x86_64.rpm" "$tar_gz_name"
+download "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "$tar_gz_name"
+# download "http://auth.cdnfly.cn/cdnfly/elasticsearch-7.6.1-x86_64.rpm" "http://auth.cdnfly.cn/cdnfly/elasticsearch-7.6.1-x86_64.rpm" "$tar_gz_name"
 
 tar xf $tar_gz_name
 rm -rf cdnfly
