@@ -221,7 +221,7 @@ else
 fi
 
 cd /opt/
-download "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "$tar_gz_name"
+download "https://github.com/nieyuli98/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.com/nieyuli98/cdnflydadao/raw/main/master/$tar_gz_name" "$tar_gz_name"
 # download "http://auth.cdnfly.cn/cdnfly/elasticsearch-7.6.1-x86_64.rpm" "http://auth.cdnfly.cn/cdnfly/elasticsearch-7.6.1-x86_64.rpm" "$tar_gz_name"
 
 tar xf $tar_gz_name
